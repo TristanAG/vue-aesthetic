@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -33,8 +35,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <h1>Skeleton-Forest</h1>
-      <p>paragraph</p>
+
+
+      <!--<p>paragraph</p>
       <a href="#">link</a>
       <hr />
       <ul>
@@ -42,9 +45,67 @@
         <li>thing</li>
         <li>thing</li>
       </ul>
-      <div class="button">Button</button>
+      <div class="button">Button</button>-->
+    </div>
+
+
+<!-- D I V I D E R -->
+
+
+    <div class="row">
+      <div id="app-5">
+
+
+        <p>
+          <img src="images/logo.png" style="width:40px; margin-top:12px; margin-bottom: -16px;">
+          by: <a href="#">@tristan_ag</a>
+          <h2>vue-aesthetic</h2>
+        </p>
+
+        <hr>
+        <span style="float:right">
+          <button v-on:click="addMoney">aesthetic</button>
+        </span>
+
+          <span>
+            <input v-model="message" style="width:290px;">
+          </span>
+
+
+        </p>
+
+        <p>
+
+          <div id="container" style="text-align: center;">
+        <div style="text-align:center; width: 600px ">
+          <p v-html="message"></p>
+        </div>
+          </div>
+
+    </p>
+
     </div>
   </div>
+
+  <script>
+  var app5 = new Vue({
+    el: '#app-5',
+    data: {
+      message: 'c h i l l'
+    },
+    methods: {
+      addMoney: function () {
+        this.message = this.message
+          .toUpperCase()
+          .split('').join('&nbsp;&nbsp;&nbsp;')
+          /*.replace(/ /g,"$")
+          .split('').join('&nbsp;&nbsp;&nbsp; ')*/
+          /*.replace(/\$/g,"&nbsp;")*/
+
+      }
+    }
+  })
+  </script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
