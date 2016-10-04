@@ -1,7 +1,13 @@
-#Skeleton-Forest
+#Vue-Aesthetic
 
-Slightly modified version of Skeleton with "forest theme"
+Aesthetic text generator for all your vaporwave commenting needs.
 
-I found myself always changing a few things around, so I figured I would make a slightly different branch to account for my preferences.
+demo: https://tristanag.github.io/vue-aesthetic/
 
-work-in-progress :)
+work-in-progress (•‿•)
+
+goals:  control space between characters
+        revert to some sort of default state
+        create aesthetic-ipsum generator
+        
+
